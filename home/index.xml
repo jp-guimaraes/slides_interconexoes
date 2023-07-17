@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Interconexões</title>
+    <link>https://jp-guimaraes.github.io/slides_interconexoes/home/</link>
+    <description>Recent content in Homes on Interconexões</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://jp-guimaraes.github.io/slides_interconexoes/home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_interconexoes/home/01_intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_interconexoes/home/01_intro/</guid>
+      <description> Objetivos Conhecer os elementos de interconexões de um computadore atual
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_interconexoes/home/02_interconexoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_interconexoes/home/02_interconexoes/</guid>
+      <description>O que são interconexões?   Placa capaz de interconectar todos os componentes que fazem parte do computador
+ Processador Memória Primária Memória Secundária I/O    Transmissão de dados  Quiz Qual transmissão atinge velocidades mais altas?
+ Barramentos Comunicação paralela
+ Linhas de dados Linhas de endereços Linhas de controle
+ Controladores Transmissão e Recepção
+Controladores de barramentos
+ Em geral&amp;hellip;
+Quanto maior o número de dispositivos conectados ↓ Maior é o comprimento de um barramento ↓ Maior o atraso na propagação de sinais.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_interconexoes/home/03_placamae/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_interconexoes/home/03_placamae/</guid>
+      <description>Placa mãe  Chipset Chip - SET
+ Chips Gerenciador do fluxo de dados
+Video
+Audio
+Rede
+USB
+I/O
+ antigamente&amp;hellip;
+ Organizações diferentes Processadores com (ou sem) vídeo integrado
+Processadores com (ou sem) controlador de PCIe
+Processadores com (ou sem ou desabilitado) controlador de memória
+ Overclocking de memória -&amp;gt; Dissicronia de frequência com processador  Acesso direto do processador a memória, placa de vídeo
+ Ponte Sul Fusion controller hub (FCH) -&amp;gt; AMD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_interconexoes/home/04_atualmente/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_interconexoes/home/04_atualmente/</guid>
+      <description> atualmente&amp;hellip;
+processadores com super poderes
+ Intel: Direct Media Interface (DMI)
+AMD: Unified Media Interface
+Nomes vão mudando&amp;hellip;
+ Intel DMI
+observe as versões
+ Leitura complementar
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.98.0" />
+    <meta charset="utf-8">
+<title>Interconexões</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/slides_interconexoes/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/slides_interconexoes/reveal-js/css/reveal.css"><link rel="stylesheet" href="/slides_interconexoes/robot-lung.css" id="theme"><link rel="stylesheet" href="/slides_interconexoes/highlight-js/color-brewer.min.css">
+    
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h1 id="interconexões">Interconexões</h1>
+<p>Operação e Organização de Computadores</p>
+<p><a href="https://jp-guimaraes.github.io/">🌐 João Paulo Guimarães</a></p>
+</section>
+
+  
+
+    <section>
+
+<section data-shortcode-section>
+<h1 id="objetivos">Objetivos</h1>
+<p>Conhecer os elementos de interconexões de um computadore atual</p>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="o-que-são-interconexões">O que são interconexões?</h1>
+</section><section>
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/91DhCOBVcLL._AC_SL1500_.jpg" alt=""></p>
+</section><section>
+<p>Placa capaz de interconectar todos os componentes que fazem parte do computador</p>
+<ol>
+<li>Processador</li>
+<li>Memória Primária</li>
+<li>Memória Secundária</li>
+<li>I/O</li>
+</ol>
+</section><section>
+<p><img src="https://lockgamer.files.wordpress.com/2012/11/m5a99fx_pro_r2-0-product_photo-io-e1353094975965.jpg" alt=""></p>
+</section><section>
+<h1 id="transmissão-de-dados">Transmissão de dados</h1>
+<p><img src="http://s.glbimg.com/po/tt/f/original/2013/09/12/gpc20130912_1.jpg" alt=""></p>
+</section><section>
+<h1 id="quiz">Quiz</h1>
+<p>Qual transmissão atinge velocidades mais altas?</p>
+</section><section>
+<h1 id="barramentos">Barramentos</h1>
+<p>Comunicação paralela</p>
+<p><img src="https://cursosonline.mte-thomson.com.br/wp-content/uploads/2018/08/REDECAN.jpg" alt=""></p>
+</section><section>
+<p>Linhas de dados
+Linhas de endereços
+Linhas de controle</p>
+</section><section>
+<h1 id="controladores">Controladores</h1>
+<p>Transmissão e Recepção</p>
+<p>Controladores de barramentos</p>
+</section><section>
+<p>Em geral&hellip;</p>
+<p>Quanto maior o número de dispositivos conectados
+↓
+Maior é o comprimento de um barramento
+↓
+Maior o atraso na propagação de sinais.
+↓
+Maior é o tempo gasto para que um dispositivo obtenha o controle do barramento.</p>
+</section><section>
+<p>Solução?</p>
+<p>Hierarquia de barramentos</p>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="placa-mãe">Placa mãe</h1>
+</section><section>
+<h1 id="chipset">Chipset</h1>
+<p>Chip - SET</p>
+</section><section>
+<h1 id="chips">Chips</h1>
+<p>Gerenciador do fluxo de dados</p>
+<p>Video</p>
+<p>Audio</p>
+<p>Rede</p>
+<p>USB</p>
+<p>I/O</p>
+</section><section>
+<p>antigamente&hellip;</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Diagrama_placa-m%C3%A3e.png" alt=""></p>
+</section><section>
+<h1 id="organizações-diferentes">Organizações diferentes</h1>
+<p>Processadores com (ou sem) vídeo integrado</p>
+<p>Processadores com (ou sem) controlador de PCIe</p>
+<p>Processadores com (ou sem ou desabilitado) controlador de memória</p>
+<ul>
+<li>Overclocking de memória -&gt; Dissicronia de frequência com processador</li>
+</ul>
+<p><strong>Acesso direto do processador a memória, placa de vídeo</strong></p>
+</section><section>
+<h1 id="ponte-sul">Ponte Sul</h1>
+<p>Fusion controller hub (FCH) -&gt; AMD</p>
+<p>Plataform controller hub (PCH) -&gt; Intel</p>
+<p>Demais slots de expansão</p>
+<p>USB</p>
+<p>ROM</p>
+<p>SATA</p>
+<p>Audio</p>
+<p>Video</p>
+<p>Outras PCIe</p>
+</section><section>
+<h1 id="ponte-norte">Ponte Norte</h1>
+<p>(IO hub)</p>
+<p>Conectado ao processador</p>
+<p>QPI -&gt; intel</p>
+<p>Hypertransport -&gt; AMD</p>
+<p>Conectada a ponte Sul</p>
+<p>Caso não haja controlador de memória no processador</p>
+<ul>
+<li>Controlador de memória conectado a ponte norte</li>
+</ul>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<p>atualmente&hellip;</p>
+<p>processadores com super poderes</p>
+<p><img src="https://i.stack.imgur.com/OiaaB.jpg" alt=""></p>
+</section><section>
+<p>Intel: Direct Media Interface (DMI)</p>
+<p>AMD: Unified Media Interface</p>
+<p>Nomes vão mudando&hellip;</p>
+</section><section>
+<p>Intel DMI</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Intel_X99_chipset_%28vectorized%29.svg/720px-Intel_X99_chipset_%28vectorized%29.svg.png" alt=""></p>
+<p>observe as <a href="https://en.wikipedia.org/wiki/Direct_Media_Interface">versões</a></p>
+</section><section>
+<p><a href="https://www.audiosciencereview.com/forum/index.php?threads/dmi-umi-and-you-a-guide-to-your-motherboards-chipset-bandwidth.35521/">Leitura complementar</a></p>
+
+</section>
+</section>
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/slides_interconexoes/reveal-hugo/object-assign.js></script>
+
+<a href="/slides_interconexoes/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">null</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"transition":"slide","transition_speed":"fast"}</script>
+
+<script src="/slides_interconexoes/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/slides_interconexoes/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/slides_interconexoes/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/slides_interconexoes/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/slides_interconexoes/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/slides_interconexoes/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    
+    
+  </body>
+</html>
