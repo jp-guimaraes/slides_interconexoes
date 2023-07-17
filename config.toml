@@ -1,0 +1,14 @@
+baseURL = "https://jp-guimaraes.github.io/slides_interconexoes/"
+languageCode = "en-us"
+title = "Interconexões"
+
+theme = "reveal-hugo"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
