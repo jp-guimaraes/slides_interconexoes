@@ -1,114 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Entrada e Saída</title>
-    <link>https://jp-guimaraes.github.io/slides_io/home/</link>
-    <description>Recent content in Homes on Entrada e Saída</description>
+    <title>Homes on Interconexões</title>
+    <link>https://jp-guimaraes.github.io/slides_interconexoes/home/</link>
+    <description>Recent content in Homes on Interconexões</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jp-guimaraes.github.io/slides_io/home/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://jp-guimaraes.github.io/slides_interconexoes/home/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://jp-guimaraes.github.io/slides_io/home/01_intro/</link>
+      <link>https://jp-guimaraes.github.io/slides_interconexoes/home/01_intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jp-guimaraes.github.io/slides_io/home/01_intro/</guid>
-      <description> Objetivos Conhecer a organização básica de entrada e saída
-Conhecer os métodos de transferências de dados
+      <guid>https://jp-guimaraes.github.io/slides_interconexoes/home/01_intro/</guid>
+      <description> Objetivos Conhecer os elementos de interconexões de um computadore atual
  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jp-guimaraes.github.io/slides_io/home/02_interconexoes/</link>
+      <link>https://jp-guimaraes.github.io/slides_interconexoes/home/02_interconexoes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jp-guimaraes.github.io/slides_io/home/02_interconexoes/</guid>
-      <description> Principios básicos  Classificação quanto ao sentido do fluxo de dados
-Dispositivos (periféricos) de Entrada
-Dispositivos de Saída
-Dispositivos Híbridos
- Estudando a comunicação CPU - Periféricos
- Problemas Cada dispositivo tem:
- Conexões físicas Sentido de conexão Velocidades diferentes Requisitos diferentes Fabricantes diferentes   Possíveis soluções Hardware controlador dedicado
-Interface CPU periférico
- </description>
+      <guid>https://jp-guimaraes.github.io/slides_interconexoes/home/02_interconexoes/</guid>
+      <description>O que são interconexões?   Placa capaz de interconectar todos os componentes que fazem parte do computador
+ Processador Memória Primária Memória Secundária I/O    Transmissão de dados  Quiz Qual transmissão atinge velocidades mais altas?
+ Barramentos Comunicação paralela
+ Linhas de dados Linhas de endereços Linhas de controle
+ Controladores Transmissão e Recepção
+Controladores de barramentos
+ Em geral&amp;hellip;
+Quanto maior o número de dispositivos conectados ↓ Maior é o comprimento de um barramento ↓ Maior o atraso na propagação de sinais.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jp-guimaraes.github.io/slides_io/home/03_exemplo/</link>
+      <link>https://jp-guimaraes.github.io/slides_interconexoes/home/03_placamae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jp-guimaraes.github.io/slides_io/home/03_exemplo/</guid>
-      <description> Estudo de caso  Comunicação CPU - HD
- Função da Controladora
-Conexão física
-Conversão de protocolos de comunicação
-Conversão de tipos de dados
-Buffer - armazenamento temporário
- Exemplo 2: Comunicação CPU - Teclado/mouse
- CPU - Controlador Comunicação via software
+      <guid>https://jp-guimaraes.github.io/slides_interconexoes/home/03_placamae/</guid>
+      <description>Placa mãe  Chipset Chip - SET
+ Chips Gerenciador do fluxo de dados
+Video
+Audio
+Rede
+USB
+I/O
  antigamente&amp;hellip;
-BIOS
- Atualmente
-Driver
-Sistema Operacional: Gerenciador de dispositivos
-Hardware: Chipset
+ Organizações diferentes Processadores com (ou sem) vídeo integrado
+Processadores com (ou sem) controlador de PCIe
+Processadores com (ou sem ou desabilitado) controlador de memória
+ Overclocking de memória -&amp;gt; Dissicronia de frequência com processador  Acesso direto do processador a memória, placa de vídeo
+ Ponte Sul Fusion controller hub (FCH) -&amp;gt; AMD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_interconexoes/home/04_atualmente/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_interconexoes/home/04_atualmente/</guid>
+      <description> atualmente&amp;hellip;
+processadores com super poderes
+ Intel: Direct Media Interface (DMI)
+AMD: Unified Media Interface
+Nomes vão mudando&amp;hellip;
+ Intel DMI
+observe as versões
+ Leitura complementar
  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jp-guimaraes.github.io/slides_io/home/04_comunicacao/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jp-guimaraes.github.io/slides_io/home/04_comunicacao/</guid>
-      <description> Comunicação  Requisitos
-Endereço
-Comandos
-Dados
- Modelos de troca de dados Assíncrono
-Síncrono
-Semi-síncrono
- Assíncrono Dois sistemas digitais autônomos
-Clocks não sincronizados
- Síncrona Mesmo Clock para CPU e periférico
-Clock diferente de frequência
-Tempo de transferência calculado
- Semi-síncrona Mesmo Clock para CPU e periférico
-Clock diferente de frequência
-Tempo de transferência desconhecido
- </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jp-guimaraes.github.io/slides_io/home/05_mapeamento_modos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jp-guimaraes.github.io/slides_io/home/05_mapeamento_modos/</guid>
-      <description>Endereçamento  Em memória: - reserva de posições específicas de memória para periféricos
-Em portas de entrada/saída - Acesso direto ao dispositivo
- Comunicação Modos de transferência
- Requisitos:
- Respostas rápidas a eventos críticos Não sobrecarregar CPU com IO   Modos Comunicação programada
-Rotina é responsável pela transferência de dados para o dispositivo de I/O
-Comunicação por interrupução
-Hardware sinaliza quando é hora de fazer uma transferência de dados</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jp-guimaraes.github.io/slides_io/home/06_usb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jp-guimaraes.github.io/slides_io/home/06_usb/</guid>
-      <description>Estudo de caso  USB
-Universal Serial Bus
-Barramento serial Universal
-  Transferência de Controle Transferências em Massa Transferências de Interrupção Transferências Isócronas:   Transferência de Controle
- Usada para tarefas de configuração e comando. Inicializa o dispositivo quando é conectado. Pode ser usada para comandos ad hoc durante a operação normal.   Transferências em Massa
- Usada para transferir grandes quantidades de dados não cronometrados. Garante a entrega dos dados, mas não o tempo de entrega.</description>
     </item>
     
   </channel>
